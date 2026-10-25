@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منظومة دكتور دايت - التغذية العلاجية بدون جراحة</title>
+    <!-- Google Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-seedling"></i> دكتور <span>دايت</span>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="active">الرئيسية</a>
+                <a href="#about">من نحن</a>
+                <a href="#services">برامجنا</a>
+                <a href="#bmi">احسب وزني</a>
+                <a href="#testimonials">قصص النجاح</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> احجز استشارتك</a>
+                <div class="hamburger" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="badge"><i class="fa-solid fa-heart-pulse"></i> تغذية علاجية متكاملة</span>
+                <h1>طريقك للرشاقة والصحة بدون حرمان أو جراحة!</h1>
+                <p>نساعدك في الوصول لوزن المثالي وتحسين صحتك العامة من خلال خطط غذائية مدروسة ومخصصة لحالتك الصحية خصيصاً.</p>
+                <div class="hero-buttons">
+                    <a href="#bmi" class="btn btn-primary">احسب مؤشر كتلة الجسم</a>
+                    <a href="#services" class="btn btn-outline">استكشف البرامج</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=800&q=80" alt="صحة وتغذية">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Programs Section -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>برامجنا العلاجية والغذائية</h2>
+                <p>برامج مصممة بعناية لتناسب أهدافك وطبيعة جسمك</p>
+            </div>
+            <div class="grid-cards">
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-weight-scale"></i></div>
+                    <h3>برنامج تخسيس الوزن</h3>
+                    <p>فقدان الدهون الزائدة بذكاء وبدون اتباع أنظمة حرمان قاسية، مع الحفاظ على الكتلة العضلية.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                    <h3>علاج النحافة وزيادة الوزن</h3>
+                    <p>برامج غذائية غنية بالسعرات الحرارية الصحية لبناء عضلات صافية ووزن مثالي متناسق.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-file-medical"></i></div>
+                    <h3>تغذية الأمراض المزمنة</h3>
+                    <p>أنظمة مخصصة لمرضى السكري، الضغط، ومقاومة الإنسولين لضبط مستويات الدم وحماية الجسم.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BMI Calculator Section -->
+    <section class="bmi-section section-padding" id="bmi">
+        <div class="container">
+            <div class="section-title">
+                <h2>حاسبة مؤشر كتلة الجسم (BMI)</h2>
+                <p>اعرف وضعك الحالي للوزن وتأثيره على صحتك العامة</p>
+            </div>
+            <div class="bmi-card">
+                <form id="bmiForm" class="bmi-form">
+                    <div class="form-group">
+                        <label>الطول (سم):</label>
+                        <input type="number" id="height" placeholder="مثال: 175" required>
+                    </div>
+                    <div class="form-group">
+                        <label>الوزن (كجم):</label>
+                        <input type="number" id="weight" placeholder="مثال: 80" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">احسّب الآن</button>
+                </form>
+                <div class="bmi-result" id="bmiResult">
+                    <h3>نتيجة الفحص:</h3>
+                    <p id="resultText">أدخل طولك ووزنك لمعرفة المؤشر.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>قصص نجاح عملائنا</h2>
+                <p>نماذج حقيقية لتغيير حياة أصحابها نحو الأفضل</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testi-box">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"خسرت 15 كيلو من وزني بدون أي شعور بالحرمان، والنظام كان مرن جداً ومناسب ليومي."</p>
+                    <h4>محمد أحمد</h4>
+                </div>
+                <div class="testi-box">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"تخلصت من مشكلة مقاومة الإنسولين وظبطت صحتي بفضل توجيهات منظومة دكتور دايت الرائعة."</p>
+                    <h4>سارة خالد</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <a href="#" class="logo footer-logo">
+                    <i class="fa-solid fa-seedling"></i> دكتور <span>دايت</span>
+                </a>
+                <p>الوجهة الأولى للتغذية العلاجية السليمة وبدون جراحة. صحتك هي رأس مالك الحقيقي.</p>
+            </div>
+            <div class="footer-links">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#services">البرامج</a></li>
+                    <li><a href="#bmi">الحاسبة</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>تواصل معنا</h4>
+                <p><i class="fa-solid fa-phone"></i> 01041095588</p>
+                <p><i class="fa-solid fa-location-dot"></i> مصر، القاهرة الكبرى</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة &copy; 2026 منظومة دكتور دايت.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
